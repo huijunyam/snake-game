@@ -3,7 +3,7 @@ const Coord = require("./coord.js");
 class Apple {
   constructor(board) {
     this.board = board;
-    this.generateApple();
+    this.position = this.generateApple();
   }
 
   generateApple() {
@@ -15,7 +15,7 @@ class Apple {
       y = Math.floor(Math.random() * this.board.dimension);
     }
 
-    this.position = new Coord(x, y);
+    return new Coord(x, y);
   }
 }
 
