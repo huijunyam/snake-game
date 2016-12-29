@@ -54,8 +54,8 @@ class Snake {
 
   turn(direction) {
     if (Snake.DIRECTION[this.direction].isOpposite(Snake.DIRECTION[direction]) ||
-        this.turning) {
-          return;
+      this.turning) {
+        return;
     } else {
       this.turning = true;
       this.direction = direction;
